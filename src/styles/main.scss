@@ -1,0 +1,23 @@
+@import "layout/grid";
+@import "resets";
+@import "colors";
+
+// Global
+// ---------------------------------------------------------------------------------------------------------------------
+
+section {
+  padding: 30px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none !important;
+  text-underline: none !important;
+}
+
+span {
+  line-height: 20px;
+}
