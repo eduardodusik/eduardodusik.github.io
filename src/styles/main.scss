@@ -21,3 +21,43 @@ a {
 span {
   line-height: 20px;
 }
+
+.full-height {
+  min-height: 100vh;
+}
+
+.text-primary {
+  color: $primary_color !important;
+}
+
+
+// HEADER
+
+.header {
+  text-align: center;
+
+  .header__text {
+    animation: opacity;
+    animation-duration: 4s;
+  }
+
+  .avatar {
+    border-radius: 1000px;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border: 3px solid $primary_color;
+    animation: opacity;
+    animation-duration: 5s;
+    img {
+      height: 200px;
+    }
+  }
+}
+
+@keyframes opacity {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
