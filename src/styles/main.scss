@@ -27,10 +27,10 @@ span {
 }
 
 .text-primary {
-  color: $primary_color !important;
+  background-image: linear-gradient(135deg, #0DC1FB, $primary_color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-
 // HEADER
 
 .header {
@@ -49,6 +49,9 @@ span {
     border: 3px solid $primary_color;
     animation: opacity;
     animation-duration: 5s;
+    &:hover {
+      transform: scale(1.01);
+    }
     img {
       height: 200px;
     }
@@ -61,3 +64,41 @@ span {
     opacity: 0;
   }
 }
+
+// ABOUT ME
+
+.about {
+  background-color: $primary_color;
+  background-image: linear-gradient(135deg, #0DC1FB, $primary_color);
+  color: #fff;
+  height: 100%;
+  border-top: 0;
+  clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+  padding-bottom: 10%;
+
+  header {
+    text-align: center;
+  }
+}
+
+.projects__carousel {
+  color: $second_color;
+  margin: 100px;
+}
+
+//.carousel-cell {
+//  height: 260px;
+//  width: 260px;
+//  margin-right: 200px;
+//}
+
+.carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 160px;
+  margin-right: 10px;
+}
+.carousel-cell.size-180 { width: 180px; }
+.carousel-cell.size-large { width: 75%; }
